@@ -92,7 +92,6 @@ nitrogen/
 # Rescript
 .bsb.lock
 *.res.js
-*.gen.tsx
 
 
 lib/**
