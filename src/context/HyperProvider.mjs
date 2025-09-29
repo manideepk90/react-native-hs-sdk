@@ -5,7 +5,7 @@ import * as Js_exn from "rescript/lib/es6/js_exn.js";
 import * as Caml_obj from "rescript/lib/es6/caml_obj.js";
 import * as JsxRuntime from "react/jsx-runtime";
 import * as Caml_js_exceptions from "rescript/lib/es6/caml_js_exceptions.js";
-import * as NativeHyperswitchSdk$HyperswitchSdkReactNative from "../modules/NativeHyperswitchSdk.mjs";
+import * as NativeHyperswitchSdk$ReactNativeHsSdk from "../modules/NativeHyperswitchSdk.mjs";
 
 var defaultVal = {
   publishableKey: "",
@@ -26,7 +26,7 @@ var Provider = {
 };
 
 function initHyperswitch(publishableKey, customBackendUrl, customLogUrl, customParams) {
-  return NativeHyperswitchSdk$HyperswitchSdkReactNative.nativeHyperswitchSdk.initialise(publishableKey, customBackendUrl, customLogUrl, customParams);
+  return NativeHyperswitchSdk$ReactNativeHsSdk.nativeHyperswitchSdk.initialise(publishableKey, customBackendUrl, customLogUrl, customParams);
 }
 
 function HyperProvider(props) {

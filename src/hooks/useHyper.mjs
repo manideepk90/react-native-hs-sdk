@@ -7,8 +7,8 @@ import * as Js_json from "rescript/lib/es6/js_json.js";
 import * as Belt_Option from "rescript/lib/es6/belt_Option.js";
 import * as Core__Option from "@rescript/core/src/Core__Option.mjs";
 import * as Caml_js_exceptions from "rescript/lib/es6/caml_js_exceptions.js";
-import * as HyperProvider$HyperswitchSdkReactNative from "../context/HyperProvider.mjs";
-import * as NativeHyperswitchSdk$HyperswitchSdkReactNative from "../modules/NativeHyperswitchSdk.mjs";
+import * as HyperProvider$ReactNativeHsSdk from "../context/HyperProvider.mjs";
+import * as NativeHyperswitchSdk$ReactNativeHsSdk from "../modules/NativeHyperswitchSdk.mjs";
 
 function getError(errorOpt) {
   var error = errorOpt !== undefined ? errorOpt : "Unknown error occurred while presenting payment sheet";
@@ -22,7 +22,7 @@ function getError(errorOpt) {
 
 async function _initPaymentSession(params) {
   try {
-    await NativeHyperswitchSdk$HyperswitchSdkReactNative.nativeHyperswitchSdk.initPaymentSession(Core__Option.getOr(params.paymentIntentClientSecret, ""));
+    await NativeHyperswitchSdk$ReactNativeHsSdk.nativeHyperswitchSdk.initPaymentSession(Core__Option.getOr(params.paymentIntentClientSecret, ""));
     return {};
   }
   catch (raw_obj){
@@ -93,7 +93,7 @@ function parsePaymentSheetResult(result) {
 
 async function _presentPaymentSheet(params) {
   try {
-    var result = await NativeHyperswitchSdk$HyperswitchSdkReactNative.nativeHyperswitchSdk.presentPaymentSheet(params);
+    var result = await NativeHyperswitchSdk$ReactNativeHsSdk.nativeHyperswitchSdk.presentPaymentSheet(params);
     return parsePaymentSheetResult(result);
   }
   catch (raw_obj){
@@ -127,7 +127,7 @@ async function _presentPaymentSheet(params) {
 }
 
 function useHyper() {
-  var match = React.useContext(HyperProvider$HyperswitchSdkReactNative.hyperProviderContext);
+  var match = React.useContext(HyperProvider$ReactNativeHsSdk.hyperProviderContext);
   var contextData = match[0];
   var isReady = contextData.isInitialized && Belt_Option.isNone(contextData.error);
   var initPaymentSession = React.useCallback((function (params) {
