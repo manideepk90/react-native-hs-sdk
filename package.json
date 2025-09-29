@@ -1,6 +1,6 @@
 {
   "name": "react-native-hs-sdk",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Hyperswitch SDK for React Native",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -41,7 +41,7 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{tsx,res}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "npm run re:build",
+    "prepare": "npm run re:build && bob build",
     "release": "release-it --only-version"
   },
   "keywords": [
