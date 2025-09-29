@@ -1,4 +1,4 @@
-import { HyperProvider } from 'hyperswitch-sdk-react-native';
+import { HyperProvider } from 'react-native-hs-sdk';
 import PaymentScreen from './PaymentScreen';
 
 export default function App() {

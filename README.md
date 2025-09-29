@@ -1,11 +1,11 @@
-# hyperswitch-sdk-react-native
+# react-native-hs-sdk
 
 Hyperswitch SDK for React Native - Accept payments in your React Native app with ease.
 
 ## Installation
 
 ```sh
-npm install hyperswitch-sdk-react-native
+npm install react-native-hs-sdk
 ```
 
 
@@ -18,7 +18,7 @@ Here's the minimal code to get started:
 // App.tsx
 import React from 'react';
 import { View, TouchableOpacity, Text } from 'react-native';
-import { HyperProvider, useHyper } from 'hyperswitch-sdk-react-native';
+import { HyperProvider, useHyper } from 'react-native-hs-sdk';
 
 function PaymentScreen() {
   const { initPaymentSession, presentPaymentSheet } = useHyper();
@@ -99,7 +99,7 @@ import type {
   InitPaymentSessionResult,
   PresentPaymentSheetParams,
   PresentPaymentSheetResult,
-} from 'hyperswitch-sdk-react-native';
+} from 'react-native-hs-sdk';
 ```
 
 

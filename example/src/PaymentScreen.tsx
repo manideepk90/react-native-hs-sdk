@@ -13,7 +13,7 @@ import {
   type InitPaymentSessionResult,
   type PresentPaymentSheetParams,
   type PresentPaymentSheetResult,
-} from 'hyperswitch-sdk-react-native';
+} from 'react-native-hs-sdk';
 
 export default function PaymentScreen() {
   const { initPaymentSession, presentPaymentSheet } = useHyper();

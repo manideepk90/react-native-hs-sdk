@@ -36,7 +36,7 @@
     "re:format": "rescript format -all",
     "re:build": "rescript",
     "re:clean": "rescript clean",
-    "example": "yarn workspace hyperswitch-sdk-react-native-example",
+    "example": "yarn workspace react-native-hs-sdk-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{tsx,res}\"",
@@ -51,14 +51,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juspay/hyperswitch-sdk-react-native.git"
+    "url": "git+https://github.com/manideepk90/react-native-hs-sdk.git"
   },
   "author": "sh-iv-am <shivam.shashank@juspay.in> (https://hyperswitch.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juspay/hyperswitch-sdk-react-native/issues"
+    "url": "https://github.com/manideepk90/react-native-hs-sdk/issues"
   },
-  "homepage": "https://github.com/juspay/hyperswitch-sdk-react-native#readme",
+  "homepage": "https://github.com/manideepk90/react-native-hs-sdk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
