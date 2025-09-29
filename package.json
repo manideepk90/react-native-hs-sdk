@@ -1,6 +1,6 @@
 {
   "name": "react-native-hs-sdk",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Hyperswitch SDK for React Native",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
